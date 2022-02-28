@@ -1,3 +1,10 @@
+Practice.ipynb
+# adding files to git ignore
+numpy_test.py
+
+#adding files to git ignore
+untitled.ipynb
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
