@@ -113,7 +113,7 @@ def hemisphere(browser):
     single_hem = hems.find_all('div', class_='item')
 
     for item in single_hem:
-        hemisphere = {}
+        hemispheres_dict = {}
 
         title = item.find('h3').get_text()
         browser.links.find_by_partial_text(title).click()
@@ -121,10 +121,10 @@ def hemisphere(browser):
         browser.links.find_by_partial_text('Sample').click()
         sample = browser.links.find_by_text('Sample')
         img_url = sample['href']
-        hemisphere['img_url'] = img_url
-        hemisphere['title'] = title
+        hemispheres_dict['img_url'] = img_url
+        hemispheres_dict['title'] = title
 
-        hemisphere_image_urls.append(hemisphere)
+        hemisphere_image_urls.append(hemispheres_dict)
 
         browser.back()
 
